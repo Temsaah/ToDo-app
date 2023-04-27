@@ -126,3 +126,10 @@ function checkEmptyTask() {
     clearBtn.remove();
   }
 }
+
+inputText.addEventListener("keydown", (e) => {
+  console.log(e);
+  if (e.key === "Enter") {
+    submitBtn.click();
+  }
+});
